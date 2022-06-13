@@ -1,0 +1,10 @@
+{{#each blogs}}
+    <h3>{{title}}</h3>
+    <p>{{body}}</p>
+    <p>{{User.username}}</p>
+    <p>{{comments.body}}</p>
+    <a href="/comments/{{id}}"><button onclick="addComment({{id}})" >add comment</button></a>
+    <hr>
+{{/each}}
+
+<script src="/js/home.js"></script>
